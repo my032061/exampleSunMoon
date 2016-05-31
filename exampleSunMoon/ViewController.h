@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *sunLabel;
+@property (weak, nonatomic) IBOutlet UILabel *moonLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
 
 
 @end

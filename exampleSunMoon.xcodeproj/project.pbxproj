@@ -14,6 +14,10 @@
 		104BA5DF1CF68122000C1266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104BA5DE1CF68122000C1266 /* Assets.xcassets */; };
 		104BA5E21CF68122000C1266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104BA5E01CF68122000C1266 /* LaunchScreen.storyboard */; };
 		104BA5ED1CF68122000C1266 /* exampleSunMoonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BA5EC1CF68122000C1266 /* exampleSunMoonTests.m */; };
+		104BA5F91CF6842E000C1266 /* MYSunMoon.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BA5F81CF6842E000C1266 /* MYSunMoon.m */; };
+		104BA5FB1CF689F0000C1266 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104BA5FA1CF689F0000C1266 /* CoreLocation.framework */; };
+		104BA6001CF68CDA000C1266 /* MYLocationBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BA5FD1CF68CDA000C1266 /* MYLocationBrain.m */; };
+		104BA6011CF68CDA000C1266 /* MYLocationsAnnocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BA5FF1CF68CDA000C1266 /* MYLocationsAnnocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		104BA5E81CF68122000C1266 /* exampleSunMoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exampleSunMoonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		104BA5EC1CF68122000C1266 /* exampleSunMoonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exampleSunMoonTests.m; sourceTree = "<group>"; };
 		104BA5EE1CF68122000C1266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104BA5F71CF6842E000C1266 /* MYSunMoon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYSunMoon.h; path = sunMoon/MYSunMoon.h; sourceTree = "<group>"; };
+		104BA5F81CF6842E000C1266 /* MYSunMoon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYSunMoon.m; path = sunMoon/MYSunMoon.m; sourceTree = "<group>"; };
+		104BA5FA1CF689F0000C1266 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		104BA5FC1CF68CDA000C1266 /* MYLocationBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYLocationBrain.h; path = location/MYLocationBrain.h; sourceTree = "<group>"; };
+		104BA5FD1CF68CDA000C1266 /* MYLocationBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYLocationBrain.m; path = location/MYLocationBrain.m; sourceTree = "<group>"; };
+		104BA5FE1CF68CDA000C1266 /* MYLocationsAnnocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYLocationsAnnocation.h; path = location/MYLocationsAnnocation.h; sourceTree = "<group>"; };
+		104BA5FF1CF68CDA000C1266 /* MYLocationsAnnocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYLocationsAnnocation.m; path = location/MYLocationsAnnocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104BA5FB1CF689F0000C1266 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,7 @@
 		104BA5C61CF68122000C1266 = {
 			isa = PBXGroup;
 			children = (
+				104BA5FA1CF689F0000C1266 /* CoreLocation.framework */,
 				104BA5D11CF68122000C1266 /* exampleSunMoon */,
 				104BA5EB1CF68122000C1266 /* exampleSunMoonTests */,
 				104BA5D01CF68122000C1266 /* Products */,
@@ -81,6 +94,12 @@
 		104BA5D11CF68122000C1266 /* exampleSunMoon */ = {
 			isa = PBXGroup;
 			children = (
+				104BA5FC1CF68CDA000C1266 /* MYLocationBrain.h */,
+				104BA5FD1CF68CDA000C1266 /* MYLocationBrain.m */,
+				104BA5FE1CF68CDA000C1266 /* MYLocationsAnnocation.h */,
+				104BA5FF1CF68CDA000C1266 /* MYLocationsAnnocation.m */,
+				104BA5F71CF6842E000C1266 /* MYSunMoon.h */,
+				104BA5F81CF6842E000C1266 /* MYSunMoon.m */,
 				104BA5D51CF68122000C1266 /* AppDelegate.h */,
 				104BA5D61CF68122000C1266 /* AppDelegate.m */,
 				104BA5D81CF68122000C1266 /* ViewController.h */,
@@ -211,9 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104BA6011CF68CDA000C1266 /* MYLocationsAnnocation.m in Sources */,
 				104BA5DA1CF68122000C1266 /* ViewController.m in Sources */,
+				104BA6001CF68CDA000C1266 /* MYLocationBrain.m in Sources */,
 				104BA5D71CF68122000C1266 /* AppDelegate.m in Sources */,
 				104BA5D41CF68122000C1266 /* main.m in Sources */,
+				104BA5F91CF6842E000C1266 /* MYSunMoon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
