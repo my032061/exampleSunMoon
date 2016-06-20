@@ -66,7 +66,7 @@ static MYLocationBrain *myInstance = nil;
 {
     __block CLPlacemark *places = nil;
     __block BOOL fetching = YES;
-    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    CLGeocoder *geocoder = [CLGeocoder new];
     [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
         //
         if (error) {
@@ -90,7 +90,7 @@ static MYLocationBrain *myInstance = nil;
 {
     __block NSArray *places = nil;
     __block BOOL fetching = YES;
-    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    CLGeocoder *geocoder = [CLGeocoder new];
     [geocoder geocodeAddressString:keyword completionHandler:^(NSArray *placemarks, NSError *error) {
         if (error) {
             NSLog(@"geolocation error !!");
